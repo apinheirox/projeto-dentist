@@ -9,11 +9,15 @@
 
 /* HEADER */
 header{
+    position: fixed;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--background-3);
     height: 70px;
+    padding: 0px 100px;
+    border-radius: 5px;
 }
 header img{
     width: 100px;
@@ -34,24 +38,31 @@ li{
     color: white;
     cursor: pointer;
 }
-
+header a{
+    text-decoration: none;
+    color: white;
+}
 /* SECTION HOME */
-
-.container-esq{
-
+#home{
+    background-color: var(--background-1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0px 40px 100px;
 }
 .container-esq h1{
     font-family: "Big Shoulders Display", sans-serif;
     font-weight: 800;
     font-size: 50px;
-    width: 450px;
+    max-width: 450px;
     color: var(--fontPrincipal);
     margin-bottom: 10px;
 }
 .container-esq p{
     font-family: "Sora", sans-serif;
     font-size: 20px;
-    width: 550px;
+    font-weight: 300;
+    max-width: 550px;
     color: var(--fontSecundaria);
     margin-bottom: 20px;
 }
@@ -64,7 +75,80 @@ li{
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid var(--Button-Icon);
     border-radius: 10px;
-    width: 200px;
+    width: 100%;
+    max-width: 150px;
     height: 50px;
     cursor: pointer;
+}
+
+.container-esq {
+    flex: 1;
+}
+
+.container-dir {
+    flex: 1;
+    text-align: right;
+    margin-top: -10px;
+}
+
+.container-dir img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* SECTION SERVIÇOS */
+#servicos{
+    background-color: var(--background-2);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container{
+    margin-top: 30px;
+}
+.container h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--fontPrincipal);
+}
+.container p{
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--fontSecundaria);
+}
+
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column; /* Alinha os contêineres em uma coluna para telas menores */
+        padding: 100px 10px; /* Ajuste o padding para telas menores */
+    }
+    .container-esq h1 {
+        font-size: 35px;
+    }
+    .container-esq p {
+        font-size: 15px;
+    }
+    .container-esq button {
+        width: 100%;
+        font-size: 15px;
+    }
+    .container-esq,
+    .container-dir {
+        flex: none; /* Remove flexibilidade para manter largura automática */
+        width: 100%; /* Faz os contêineres ocuparem toda a largura da tela */
+        margin-bottom: 20px; /* Adiciona espaço entre os contêineres quando em coluna */
+    }
+
+    /* Alinha o texto no centro da tela para o contêiner esquerdo */
+    .container-esq {
+        text-align: center;
+    }
+
+    /* Centraliza o conteúdo da imagem para telas menores */
+    .container-dir {
+        text-align: center;
+    }
 }
