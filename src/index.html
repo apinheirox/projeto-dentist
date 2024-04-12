@@ -11,6 +11,7 @@
     <title>Dentist Clinic</title>
 </head>
 <body>
+    <!--HEADER-->
     <header>
         <img src="/images/Logo-dentista- verde.png" alt="Logo de uma clinica de dentista">
         <nav>
@@ -22,6 +23,7 @@
             </ul>
         </nav>
     </header>
+    <!--SECTION HOME-->
     <section id="home">
         <div class="container-esq">
             <h1>Transforme seu sorriso em sua maior conquista!</h1>
@@ -32,13 +34,56 @@
             <img src="/images/Foto-dentista-1.png" alt="Foto de um dentista">
         </div>
     </section>
+    <!--SECTION SERVIÇOS-->
     <section id="servicos">
         <div class="container">
             <h1>Serviços</h1>
             <p>Serviços odontológicos completos para toda a família.</p>
         </div>
-
-        <div class="card"></div>
+        <!--CARD SLIDE-->
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"><</i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="/images/Servicos-1.png" alt="img" draggable="false"></div>
+                    <span>Limpeza Dentária</span>
+                    <h2>Limpeza profissional para remover placa bacteriana e tártaro dos dentes.</h2>
+                    <a href="#"><button>Saiba mais</button></a>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="/images/Servicos-2.png" alt="img" draggable="false"></div>
+                    <span>Implantes Dentários</span>
+                    <h2>Substituição de dentes perdidos com implantes que atuam como raízes artificiais.</h2>
+                    <a href="#"><button>Saiba mais</button></a>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="/images/Servicos-3.png" alt="img" draggable="false"></div>
+                    <span>Restaurações Dentárias</span>
+                    <h2>Inclui tratamentos como obturações para preencher cavidades causadas por cáries.</h2>
+                    <a href="#"><button>Saiba mais</button></a>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="/images/Servcos-4.png" alt="img" draggable="false"></div>
+                    <span>Aparelhos Ortodônticos</span>
+                    <h2>Correção de problemas de alinhamento dos dentes e da mordida.</h2>
+                    <a href="#"><button>Saiba mais</button></a>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="/images/Servicos-5.png" alt="img" draggable="false"></div>
+                    <span>Extração Dentária</span>
+                    <h2>Remoção de dentes danificados ou com infecções severas.</h2>
+                    <a href="#"><button>Saiba mais</button></a>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="/images/Servicos-6.png" alt="img" draggable="false"></div>
+                    <span>Odontologia Estética</span>
+                    <h2>Melhoramento do sorriso com procedimentos como clareamento, facetas e resinas.</h2>
+                    <a href="#"><button>Saiba mais</button></a>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right">></i>
+        </div>
     </section>
+    <script src="./main.js"></script>
 </body>
 </html>
