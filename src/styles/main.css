@@ -287,6 +287,9 @@ header a{
         width: 100%;
         margin: 0 5px;
     }
+    .wrapper i{
+      font-size: 15px;
+    }
     .wrapper i:first-child{
         left: -20px;
       }
