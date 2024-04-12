@@ -147,8 +147,9 @@ header a{
         text-align: center;
     }
 
-    /* Centraliza o conteúdo da imagem para telas menores */
     .container-dir {
+        margin-left: 20px;
+        width: 100%;
         text-align: center;
     }
 }
