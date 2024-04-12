@@ -103,10 +103,11 @@ header a{
 #servicos{
     background-color: var(--background-2);
     display: block;
-    padding: 20px;
+    padding: 20px 0px 50px;
     text-align: center;
     align-items: center;
     justify-content: center;
+
 }
 .container{
     margin-top: 30px;

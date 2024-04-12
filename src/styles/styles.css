@@ -1,0 +1,18 @@
+#sobre{
+    background-color: var(--background-1);
+}
+#sobre img{
+    max-width: 600px;
+}
+
+.container-dir-sobre h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: var(--fontPrincipal);
+}
+.container-dir-sobre p{
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    max-width: 450px;
+}
