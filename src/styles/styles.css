@@ -1,18 +1,94 @@
-#sobre{
+#sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Alinhar verticalmente os itens */
     background-color: var(--background-1);
-}
-#sobre img{
-    max-width: 600px;
+    padding: 0px 30px;
 }
 
-.container-dir-sobre h1{
+.container-esq-sobre {
+    flex-basis: 50%; /* Define a largura de 50% */
+    max-width: 50%; /* Define a largura máxima de 50% */
+}
+
+.container-esq-sobre img {
+    max-width: 100%; /* Faz a imagem ocupar 100% da largura do container */
+}
+
+.container-dir-sobre {
+    flex-basis: 50%; /* Define a largura de 50% */
+    max-width: 50%; /* Define a largura máxima de 50% */
+    padding: 10px; /* Adiciona espaço ao redor do texto */
+    margin-top: 30px;
+}
+
+.container-dir-sobre h1 {
     font-family: "Big Shoulders Display", sans-serif;
     font-weight: 800;
     font-size: 45px;
     color: var(--fontPrincipal);
+    margin-top: 20px;
 }
-.container-dir-sobre p{
+
+.container-dir-sobre p {
     font-family: "Sora", sans-serif;
     font-weight: 500;
+    font-size: 15px;
     max-width: 450px;
+    margin-bottom: 15px;
+}
+.container-dir-sobre a{
+    text-decoration: none;
+}
+.container-dir-sobre button{
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--fontPrincipal);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--Button-Icon);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    #sobre {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+        align-items: center; /* Alinhar centralizado verticalmente */
+    }
+    .container-esq-sobre {
+        display: flex;
+        justify-content: center; /* Centraliza a imagem horizontalmente */
+    }
+    .container-esq-sobre img {
+        max-width: 100%;
+        margin-left: 35px;/* Faz a imagem ocupar 100% da largura do container */
+    }
+    .container-dir-sobre {
+        text-align: center; /* Centraliza o texto */
+    }
+    .container-dir-sobre h1 {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 15px; /* Centraliza o título */
+    }
+    .container-dir-sobre p {
+        font-size: 15px;
+        text-align: center;
+        max-width: 350px; /* Ajusta o tamanho máximo para centralizar o texto */
+    }
+    .container-dir-sobre button {
+        width: auto;
+        padding: 13px 20px;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto; /* Centraliza o botão no meio da tela */
+    }
+    .container-esq-sobre, .container-dir-sobre {
+        flex-basis: 100%; /* Faz os containers ocuparem 100% da largura */
+        max-width: 100%; /* Faz os containers ocuparem 100% da largura */
+    }
 }
