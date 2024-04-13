@@ -126,6 +126,8 @@ header a{
     color: var(--fontSecundaria);
     margin-bottom: 20px;
 }
+/* SECTION CARD */
+
 .wrapper {
     padding-left: 30px;
     margin: 0 auto;
@@ -252,13 +254,13 @@ header a{
         padding: 100px 10px; /* Ajuste o padding para telas menores */
     }
     .container-esq h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .container-esq p {
         font-size: 15px;
     }
     .container-esq button {
-        width: 100%;
+        width: 150px;
         font-size: 15px;
     }
     .container-esq,
@@ -273,7 +275,7 @@ header a{
         align-items: center;
     }
     #servicos h1{
-      font-size: 35px;
+      font-size: 30px;
     }
     #servicos p{
       font-size: 15px;
@@ -292,7 +294,7 @@ header a{
       font-size: 15px;
     }
     .wrapper i:first-child{
-        left: -20px;
+        left: 0px;
       }
     .wrapper i:last-child{
         right: 10px;
