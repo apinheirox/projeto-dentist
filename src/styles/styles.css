@@ -152,19 +152,19 @@ input:checked + label .description {
 }
 
 .card-2[for="c1"] {
-    background-image: url('/images/Card-1.jpg');
+    background-image: url('./..//../images/Card-1.jpg');
 }
 
 .card-2[for="c2"] {
-    background-image: url('/images/Card-2.jpg');
+    background-image: url('./..//../images/Card-2.jpg');
 }
 
 .card-2[for="c3"] {
-    background-image: url('/images/Card-3.jpg');
+    background-image: url('./..//../images/Card-3.jpg');
 }
 
 .card-2[for="c4"] {
-    background-image: url('/images/Card-4.jpg');
+    background-image: url('./..//../images/Card-4.jpg');
 }
 
 /* Media Queries */
