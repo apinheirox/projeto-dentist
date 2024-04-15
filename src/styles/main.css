@@ -87,7 +87,7 @@ header a {
 }
 
 .nav ul {
-  padding: 0 0px;
+  padding: 0 -15px;
 }
 
 .nav li {
@@ -115,7 +115,7 @@ header a {
   z-index: 1;
   width: 0;
   height: 0;
-  margin: 30px 0 0px 20px;
+  margin: 30px 0 20px 20px;
   background: radial-gradient(circle, #EEFFFE, #EEFFFE);
   transition: 0.3s ease;
   text-align: center;
