@@ -48,6 +48,8 @@ header a {
   color: white;
 }
 
+/* MENU HAMBURGER */
+
 #menu-toggle {
   display: none;
   font-size: 50px;
@@ -58,7 +60,7 @@ header a {
   margin-top: 10px;
 }
 
-/* Estilo do menu e lista */
+
 #nav-menu {
   display: flex;
   flex-direction: row;
@@ -135,8 +137,8 @@ header a {
     color: var(--fontSecundaria);
     margin-bottom: 20px;
 }
-/* SECTION CARD */
 
+/* SECTION CARD */
 .wrapper {
     padding-left: 30px;
     margin: 0 auto;
@@ -257,24 +259,23 @@ header a {
     cursor: pointer;
   }
 
+/* MEDIA QUERY */
 @media (max-width: 768px) {
+
+  /* HOME */
     #home {
-        flex-direction: column; /* Alinha os contêineres em uma coluna para telas menores */
-        padding: 100px 10px; /* Ajuste o padding para telas menores */
-    }
-    .img-header{
-      padding: auto;
-      margin: 0 0px 0px -60px;
+        flex-direction: column;
+        padding: 100px 10px;
     }
     .container-esq h1 {
-        font-size: 30px;
+      font-size: 30px;
     }
     .container-esq p {
-        font-size: 15px;
+      font-size: 15px;
     }
     .container-esq button {
-        width: 150px;
-        font-size: 15px;
+      width: 150px;
+      font-size: 15px;
     }
     .container-dir img{
       max-width: 400px;
@@ -282,46 +283,47 @@ header a {
     }
     .container-esq,
     .container-dir {
-        flex: none; /* Remove flexibilidade para manter largura automática */
-        width: 100%; /* Faz os contêineres ocuparem toda a largura da tela */
-        margin-bottom: 20px; /* Adiciona espaço entre os contêineres quando em coluna */
+      flex: none;
+      width: 100%;
+      margin-bottom: 20px;
     }
-    ul.hidden {
-      display: none;
-  }
-  #menu-toggle {
+
+    /* HEADER */
+    .img-header{
+      padding: auto;
+      margin: 0 0px 0px -60px;
+    }
+
+    /* MENU HAMBURGER */
+    #menu-toggle {
     display: block;
     margin-right: -50px;
-}
-
-/* Esconder o menu por padrão */
-  #nav-menu {
+    }
+    #nav-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px; /* Abaixo do cabeçalho */
+    top: 70px;
     right: 0;
     background-color: var(--background-3);
     width: 100%;
     transition: all 0.5s ease-in;
   }
-
-/* Mostrar o menu quando aberto */
-  #nav-menu.open {
+    #nav-menu.open {
     display: flex;
     transition: all 0.9s;
-  }
+    }
 
-/* Estilização para os itens da lista no menu suspenso */
-  #nav-menu ul {
+    #nav-menu ul {
     flex-direction: column;
-  }
+    }
 
-/* Estilização para os itens de lista */
-  #nav-menu li {
+    #nav-menu li {
     margin: 10px 20px;
     list-style: none;
-  }
+    }
+
+    /* SERVIÇOS */
     #servicos{
         display: block;
         justify-content: center;
@@ -334,6 +336,8 @@ header a {
     #servicos p{
       font-size: 15px;
     }
+    
+    /* CARD SERVIÇOS */
     .carousel .card span{
       font-size: 25px;
     }
@@ -362,7 +366,6 @@ header a {
     .container-esq {
         text-align: center;
     }
-
     .container-dir {
         margin-left: 20px;
         width: 100%;
