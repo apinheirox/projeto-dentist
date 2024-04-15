@@ -1,10 +1,12 @@
+/* SECTION SOBRE */
+
 #sobre {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; /* Alinhar verticalmente os itens */
     background-color: var(--background-1);
-    padding: 0px 30px;
+    padding: 0px 30px 140px;
 }
 
 .container-esq-sobre {
@@ -13,8 +15,10 @@
 }
 
 .container-esq-sobre img {
+    width: 700px;
     max-width: 100%;
-    margin-bottom: 50px; /* Faz a imagem ocupar 100% da largura do container */
+    margin-left: -30px;
+    margin-bottom: -5px;
 }
 
 .container-dir-sobre {
@@ -57,7 +61,7 @@
 }
 /* CARD FOTOS */
 #card-fotos{
-    background-color: var(--background-2);
+    background-color: var(--background-1);
     padding: 100px 0px;
 }
 #card-fotos h1{
@@ -152,7 +156,36 @@ input:checked + label .description {
 .card-2[for="c4"] {
     background-image: url('../images/Card-4.jpg');
 }
+/* SECTION BANNER */
+#banner{
+    background-image: url(../images/Banner-1.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    max-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px 40px 100px;
+}
+.text-esq h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    max-width: 450px;
+    color: white;
+    margin-bottom: 10px;
+}
+.text-esq p{
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 350px;
+    color: var(--fontPrincipal);
+    margin-bottom: 20px;
+}
 
+.text-esq{
+    flex: 1;
+}
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -165,8 +198,8 @@ input:checked + label .description {
         justify-content: center;
     }
     .container-esq-sobre img {
-        max-width: 350px;
-        margin-left: 35px;
+        max-width: 400px;
+        margin-left: -50px;
     }
     .container-dir-sobre {
         text-align: center;
@@ -220,4 +253,28 @@ input:checked + label .description {
         font-size: 30px;
         max-width: 200px;
     }
+
+    #banner{
+        background-image: url(../images/Banner-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+        max-width:100%;
+        text-align: center;
+        flex-direction: column;
+        padding: 50px;
+        margin-top: -100px;
+    }
+    .text-esq{
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .text-esq h1{
+        font-size: 30px;
+    }
+    .text-esq p{
+        font-size: 15px;
+    }
+
 }

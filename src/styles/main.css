@@ -70,20 +70,6 @@ header a{
     margin-bottom: 20px;
 }
 
-.container-esq button{
-    font-family: "Sora", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--fontPrincipal);
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid var(--Button-Icon);
-    border-radius: 10px;
-    width: 100%;
-    max-width: 150px;
-    height: 50px;
-    cursor: pointer;
-}
-
 .container-esq {
     flex: 1;
 }
@@ -95,13 +81,15 @@ header a{
 }
 
 .container-dir img {
+    width: 700px;
     max-width: 100%;
     height: auto;
+    margin-right: -5px;
 }
 
 /* SECTION SERVIÇOS */
 #servicos{
-    background-color: var(--background-2);
+    background-color: var(--background-1);
     display: block;
     padding: 20px 0px 50px;
     text-align: center;
@@ -263,6 +251,10 @@ header a{
         width: 150px;
         font-size: 15px;
     }
+    .container-dir img{
+      max-width: 400px;
+      margin-left: -10px;
+    }
     .container-esq,
     .container-dir {
         flex: none; /* Remove flexibilidade para manter largura automática */
@@ -273,6 +265,7 @@ header a{
         display: block;
         justify-content: center;
         align-items: center;
+        margin-top: -100px;
     }
     #servicos h1{
       font-size: 30px;
