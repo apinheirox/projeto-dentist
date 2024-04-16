@@ -49,20 +49,27 @@
 .container-dir-sobre button{
     font-family: "Sora", sans-serif;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 15px;
     color: var(--fontPrincipal);
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid var(--Button-Icon);
     border-radius: 10px;
     width: 100%;
-    max-width: 150px;
-    height: 50px;
+    max-width: 130px;
+    height: 40px;
     cursor: pointer;
+    transition: all 0.9s ease;
+}
+.container-dir-sobre button:hover{
+    background-color: var(--Button-Icon);
+    color: white;
+    transition: all 0.9s ease;
 }
 /* CARD FOTOS */
 #card-fotos{
     background-color: var(--background-1);
-    padding: 100px 0px;
+    padding: 70px 0px;
+    margin-bottom: -120px;
 }
 #card-fotos h1{
     margin: 0 auto;
@@ -186,6 +193,111 @@ input:checked + label .description {
 .text-esq{
     flex: 1;
 }
+
+/* SECTION CONTATO */
+#Contato {
+    background-image: url(../images/Background-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container-cont{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 500px;
+}
+#Contato h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    color: var(--background-2);
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+form {
+    --bg-dark: #707070;
+    --clr-alpha: #9c9c9c60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .form .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="text"] {
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--clr-alpha);
+    outline: 2px solid var(--bg-dark);
+  }
+  
+  form input[type="email"]:focus,
+  form input[type="tel"]:focus,
+  form input[type="text"]:focus {
+    outline: 2px solid var(--background-1);
+  }
+  
+  form input::placeholder{
+    color: var(--background-1);
+    font-family: "Sora", sans-serif;
+    font-size: 12px;
+  }
+  
+  form .submit {
+    padding: 1rem 0.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background-color: var(--Button-Icon);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Sora", sans-serif
+  }
+  
+  form .submit:hover {
+    background-color: #00554f;
+    transition: all 0.7s ease;
+    color: white;
+  }
+  
+  .span {
+    text-decoration: none;
+    color: var(--bg-dark);
+  }
+  
+  .span a {
+    color: var(--clr);
+  }
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -275,6 +387,10 @@ input:checked + label .description {
     }
     .text-esq p{
         font-size: 15px;
+    }
+
+    .container-cont{
+        width: 350px;
     }
 
 }
