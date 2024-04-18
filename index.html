@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./src/styles/colors.css">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Dentist Clinic</title>
 </head>
 <body>
@@ -29,24 +31,24 @@
     </header>
     <!--SECTION HOME-->
     <section id="home">
-        <div class="container-esq">
+        <div class="container-esq" data-aos="fade-up-right">
             <h1>Transforme seu sorriso em sua maior conquista!</h1>
             <p>Oferecemos tratamentos odontológicos de qualidade para cuidar de você e da sua família.</p>
         </div>
-        <div class="container-dir">
+        <div class="container-dir" data-aos="fade-up-left">
             <img src="./src/images/Foto-dentista-1.png" alt="Foto de um dentista">
         </div>
     </section>
     <!--SECTION SERVIÇOS-->
     <section id="servicos">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h1>Serviços</h1>
             <p>Serviços odontológicos completos para toda a família.</p>
         </div>
         <!--CARD SLIDE-->
         <div class="wrapper">
             <i id="left" class="fa-solid fa-angle-left"><</i>
-            <ul class="carousel">
+            <ul class="carousel" data-aos="zoom-in">
                 <li class="card">
                     <div class="img"><img src="./src/images/Servicos-1.png" alt="img" draggable="false"></div>
                     <span>Limpeza Dentária</span>
@@ -87,26 +89,32 @@
             <i id="right" class="fa-solid fa-angle-right">></i>
         </div>
     </section>
+
+    <!--SECTION SOBRE-->
     <section id="sobre">
-        <div class="container-esq-sobre">
+        <div class="container-esq-sobre" data-aos="fade-up-right">
             <img src="./src/images/Foto-dentista-2.png" alt="">
         </div>
-        <div class="container-dir-sobre">
+        <div class="container-dir-sobre" data-aos="fade-up-left">
             <h1>Sobre nós</h1>
             <p>Bem-vindo à nossa clínica odontológica! Somos uma equipe de profissionais altamente qualificados e dedicados à excelência em saúde bucal. Nossa missão é proporcionar a você um atendimento personalizado e de qualidade, priorizando o seu conforto e bem-estar durante todas as etapas do seu tratamento.</p>
             <p>Com anos de experiência e conhecimento atualizado, nossa equipe oferece uma ampla gama de serviços odontológicos, desde consultas de rotina e tratamentos preventivos até procedimentos estéticos e reabilitação oral completa. Utilizamos as mais recentes tecnologias e técnicas inovadoras para garantir resultados eficientes e duradouros.</p>
             <a href="#"><button>Saiba mais</button></a>
         </div>
     </section>
+
+    <!--SECTION BANNER-->
     <section id="banner">
-        <div class="text-esq">
+        <div class="text-esq" data-aos="fade-up-right">
             <h1>Consulta on-line gratuita</h1>
             <p>Primeira consulta sua on-line será gratuita!</p>
         </div>
     </section>
-    <section id="card-fotos">
-        <h1>A saúde bucal começa com você</h1>
-        <div class="wrapper-2">
+
+    <!--CARD FOTOS-->
+    <section id="card-fotos" >
+        <h1 data-aos="fade-up">A saúde bucal começa com você</h1>
+        <div class="wrapper-2" data-aos="fade-up">
             <div class="container">
                 <input type="radio" name="slide" id="c1" checked>
                 <label for="c1" class="card-2">
@@ -135,10 +143,12 @@
             </div>
         </div>
     </section>
-    <section id="Contato">
-        <div class="container-cont">
-        <h1>Entre em Contato</h1>
-        <form class="form">
+
+    <!--SECTION CONTATO-->
+    <section id="contato">
+        <div class="container-cont" >
+        <h1 data-aos="fade-up">Entre em Contato</h1>
+        <form class="form" data-aos="zoom-out-up">
             <span class="input-span">
                 <input type="text" name="nome" id="nome" placeholder="Nome">
             </span>
@@ -157,6 +167,54 @@
           </form>
         </div>
     </section>
+
+    <!--SECTION FAQ-->
+    <section id="faq">
+        <h1 data-aos="fade-up">Duvidas Frequentes</h1>
+        <div class="faq-container" data-aos="zoom-out-up">
+            <div class="faq-item">
+                <div class="faq-question">Qual é a idade ideal para uma consulta odontológica?</div>
+                <div class="faq-answer">
+                    Recomenda-se que crianças façam sua primeira consulta dentária aos 12 meses ou seis meses após o nascimento do primeiro dente.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quais são as formas de pagamento aceitas?</div>
+                <div class="faq-answer">
+                    Aceitamos pagamento em dinheiro, cartão de crédito, cartão de débito e também oferecemos planos de pagamento parcelados.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Como agendar uma consulta?</div>
+                <div class="faq-answer">
+                    Você pode agendar uma consulta entrando em contato conosco por telefone ou através de nosso site, usando o formulário de agendamento.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <img src="./src/images/Logo-dentista- verde.png" alt="">
+            </div>
+            <div class="footer-section social-media">
+                <h4>Redes Sociais</h4>
+                <a href="#" title="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" title="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+
+            </div>
+
+            <div class="footer-section">
+                <h4>Direitos Autorais</h4>
+                <p>&copy; Desenvolvido por Woodev.tec</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./src/main.js"></script>

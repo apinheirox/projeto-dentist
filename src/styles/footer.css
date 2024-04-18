@@ -1,0 +1,145 @@
+#faq{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-1);
+    margin-top: 100px;
+}
+#faq h1{
+    text-align: center;
+    color: var(--fontPrincipal);
+    font-size: 50px;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+}
+.faq-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: "Sora", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--fontSecundaria);
+}
+
+.faq-question {
+    padding: 20px;
+    background-color: var(--background-3);
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilização da seta */
+.faq-question::after {
+    content: '▼'; /* Seta para baixo */
+    margin-left: 10px;
+    transition: transform 0.5s;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    /* Adicionando transição suave */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease, padding 0.3s ease;
+}
+
+/* Girar a seta quando a resposta estiver visível */
+.faq-question.active::after {
+    transform: rotate(-180deg);
+}
+footer {
+    background-color: var(--background-3);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 120px;
+    color: var(--fontSecundaria);
+    font-family: "Sora", sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-section img{
+    width: 120px;
+}
+.footer-section ion-icon{
+    font-size: 30px;
+    color: var(--fontSecundaria);
+    margin-top: 10px;
+}
+.footer-section {
+    padding: 5px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer h4{
+        display: none;
+    }
+    #faq h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    footer h4{
+        display: none;
+    }
+}
+/* Estilização para tornar o FAQ responsivo */
+@media (max-width: 600px) {
+    .faq-container {
+        padding: 10px;
+    }
+    
+}

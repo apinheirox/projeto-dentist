@@ -45,6 +45,7 @@
 }
 .container-dir-sobre a{
     text-decoration: none;
+    text-align: center;
 }
 .container-dir-sobre button{
     font-family: "Sora", sans-serif;
@@ -59,6 +60,7 @@
     height: 40px;
     cursor: pointer;
     transition: all 0.9s ease;
+    text-align: center;
 }
 .container-dir-sobre button:hover{
     background-color: var(--Button-Icon);
@@ -69,7 +71,7 @@
 #card-fotos{
     background-color: var(--background-1);
     padding: 70px 0px;
-    margin-bottom: -120px;
+    margin-bottom: -90px;
 }
 #card-fotos h1{
     margin: 0 auto;
@@ -195,7 +197,7 @@ input:checked + label .description {
 }
 
 /* SECTION CONTATO */
-#Contato {
+#contato {
     background-image: url(../images/Background-1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -213,7 +215,7 @@ input:checked + label .description {
     width: 100%;
     max-width: 500px;
 }
-#Contato h1{
+#contato h1{
     font-family: "Big Shoulders Display", sans-serif;
     font-weight: 800;
     font-size: 45px;
@@ -331,6 +333,7 @@ form {
         padding: 13px 20px;
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 20px auto;
         margin-bottom: 50px;
     }
@@ -364,6 +367,7 @@ form {
     #card-fotos h1{
         font-size: 30px;
         max-width: 200px;
+        margin-bottom: 5px;
     }
 
     #banner{
@@ -380,7 +384,7 @@ form {
     .text-esq{
         text-align: center;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 100px;
     }
     .text-esq h1{
         font-size: 30px;
@@ -392,5 +396,7 @@ form {
     .container-cont{
         width: 350px;
     }
-
+    #contato h1{
+        font-size: 35px;
+    }
 }

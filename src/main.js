@@ -89,3 +89,31 @@ const navMenu = document.getElementById('nav-menu');
 menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('open');
 });
+
+const questions = document.querySelectorAll('.faq-question');
+
+        // Adicionar evento de clique para cada pergunta
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                // Toggle display para a resposta correspondente
+                const answer = question.nextElementSibling;
+
+                // Alternar a visibilidade e altura da resposta
+                if (answer.style.display === 'none' || answer.style.display === '') {
+                    answer.style.display = 'block';
+                    answer.style.height = answer.scrollHeight + 'px';
+                    answer.style.padding = '10px';
+                } else {
+                    answer.style.height = '0';
+                    answer.style.padding = '0';
+                    setTimeout(() => {
+                        answer.style.display = 'none';
+                    }, 300); // Ajusta o delay com a duração da transição
+                }
+
+                // Adicionar ou remover classe "active" para girar a seta
+                question.classList.toggle('active');
+            });
+        });
+
+    AOS.init();

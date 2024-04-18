@@ -9,6 +9,7 @@
 
 body, html{
   overflow-x: hidden;
+  background-color: var(--background-1);
 }
 
 /* HEADER */
@@ -19,7 +20,10 @@ header {
   align-items: center;
   background-color: var(--background-3);
   height: 70px;
-  padding: 0px 100px;
+  padding: 0 100px;
+  position: fixed; /* Faz o header ficar fixo na tela */
+  top: 0; /* Posiciona o header no topo da tela */
+  z-index: 1000; /* Define uma camada alta para garantir que o header fique acima de outros elementos */
 }
 
 header img {
@@ -48,7 +52,8 @@ header a {
   color: white;
   transition: all 0.8s ease;
 }
-header a:hover{
+
+header a:hover {
   color: var(--fontPrincipal);
   transition: all 0.8s ease;
 }
@@ -79,7 +84,7 @@ header a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 0px 40px 100px;
+    padding: 150px 0px 40px 100px;
 }
 .container-esq h1{
     font-family: "Big Shoulders Display", sans-serif;
@@ -277,7 +282,7 @@ header a:hover{
   /* HOME */
     #home {
         flex-direction: column;
-        padding: 100px 10px;
+        padding: 170px 10px;
     }
     .container-esq h1 {
       font-size: 30px;
